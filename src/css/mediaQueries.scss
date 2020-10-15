@@ -1,0 +1,15 @@
+// Media queries
+
+@media screen and (max-width: $breakpoint-lg) {
+  .navBar {
+    display: none;
+  }
+
+  .profileSection {
+    display: none;
+  }
+
+  .hamburgerMenuIcon {
+    display: block;
+  }
+}
