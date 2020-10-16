@@ -4,6 +4,7 @@
 @import "mainSection.scss";
 @import "homePage.scss";
 @import "mediaQueries.scss";
+@import "aboutMe.scss";
 
 //General
 * {
@@ -30,4 +31,17 @@ code {
 .page404 > h1 {
   font-size: 60px;
   margin: 20%;
+}
+
+//Colors
+.bg-blue {
+  background-color: $blueColor;
+}
+
+.text-secondColor {
+  color: $secondTextColor;
+}
+
+.text-blue {
+  color: $blueColor;
 }

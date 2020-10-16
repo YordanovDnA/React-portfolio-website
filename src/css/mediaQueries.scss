@@ -13,3 +13,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: $breakpoint-xl) {
+  .profileSection {
+    width: 300px;
+  }
+}

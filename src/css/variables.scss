@@ -3,11 +3,16 @@
   src: url("../fonts/poppins/Poppins-Light.ttf");
 }
 
+$primaryFont: popins-light;
+
+$textColor: #eee;
+$secondTextColor: rgb(202, 202, 202);
+$blueColor: #04b4e0 !important;
+
 $primaryBackgroundColor: #222;
 $secondaryBackgroundColor: #444444;
-$primaryFont: popins-light;
-$iconColorActive: #04b4e0 !important;
-$textColor: #eee;
+
+$breakpoint-xl: 1200px;
 $breakpoint-lg: 992px;
 $breakpoint-md: 768px;
 $breakpoint-sm: 576px;
