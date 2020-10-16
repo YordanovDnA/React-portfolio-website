@@ -1,5 +1,17 @@
 // Media queries
 
+//Breakpoint to extra large screens (for tablets landscape) and under
+@media screen and (max-width: $breakpoint-xl) {
+  .profileSection {
+    width: 300px;
+  }
+  #profileImgDots {
+    left: 148px;
+  }
+}
+
+//Breakpoint to large screens (for tablets portrait) and under
+
 @media screen and (max-width: $breakpoint-lg) {
   .navBar {
     display: none;
@@ -11,11 +23,5 @@
 
   .hamburgerMenuIcon {
     display: block;
-  }
-}
-
-@media screen and (max-width: $breakpoint-xl) {
-  .profileSection {
-    width: 300px;
   }
 }
