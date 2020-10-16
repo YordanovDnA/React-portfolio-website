@@ -7,6 +7,7 @@ import ProfileSection from './components/profileSecion';
 import Page404 from './components/404page';
 import HomePage from './components/homePage';
 import AboutMe from './components/aboutMe';
+import Resume from './components/resume';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -49,6 +50,7 @@ function App() {
         </div>
 
         <Switch>
+          <Route path="/resume" component={Resume} />
           <Route path="/aboutMe" component={AboutMe} />
           <Route path="/" exact component={HomePage}/>
           <Route path="*" component={Page404} />
