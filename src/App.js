@@ -29,6 +29,8 @@ function App() {
 
       <ProfileSection/>
 
+      {/* Main section */}
+
       <div className="main col">
 
         <div style={style} className="hamburgerMenuWrapper">
@@ -48,7 +50,7 @@ function App() {
               animationDuration={0.5}
             />
         </div>
-
+        
         <Switch>
           <Route path="/resume" component={Resume} />
           <Route path="/aboutMe" component={AboutMe} />
