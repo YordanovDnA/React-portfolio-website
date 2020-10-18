@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProfileSection = () => {
   return (
-    <div className="profileSection">
+    <React.Fragment>
       <div className="profileImgWrapper">
         <ReactImageAppear
           className="profileImg"
@@ -44,7 +44,31 @@ const ProfileSection = () => {
           <FontAwesomeIcon className="socialMediaIcons" icon={faGithub} />
         </a>
       </div>
-    </div>
+      <div className="container mt-4">
+        <h3 className="ml-2">Skills</h3>
+        <span className="badge bg-blue text-dark ml-2">HTML 5</span>
+        <span className="badge bg-blue text-dark ml-2">CSS 3</span>
+        <span className="badge bg-blue text-dark ml-2">JavaScript</span>
+        <span className="badge bg-blue text-dark ml-2">jQuery</span>
+        <span className="badge bg-blue text-dark ml-2">Git</span>
+        <span className="badge bg-blue text-dark ml-2">Heroku-cli</span>
+        <span className="badge bg-blue text-dark ml-2">
+          <abbr title="Amazon Web Services">AWS</abbr>
+        </span>
+        <span className="badge bg-blue text-dark ml-2">Webpack</span>
+        <span className="badge badge-warning ml-2">React</span>
+        <span className="badge badge-warning ml-2">Redux</span>
+        <span className="badge badge-warning ml-2">NodeJS</span>
+        <span className="badge badge-warning ml-2">Express</span>
+
+        <button
+          className="btn btn-outline-light mt-4 mx-auto d-block w-100"
+          type="button"
+        >
+          Download CV
+        </button>
+      </div>
+    </React.Fragment>
   );
 };
 

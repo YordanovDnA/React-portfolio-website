@@ -21,7 +21,17 @@
     display: none;
   }
 
+  #profileImgDots {
+    display: none;
+  }
+
   .hamburgerMenuIcon {
     display: block;
+  }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .resumeProfileSection {
+    display: none;
   }
 }

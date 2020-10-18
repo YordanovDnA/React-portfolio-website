@@ -5,6 +5,7 @@
 @import "homePage.scss";
 @import "mediaQueries.scss";
 @import "aboutMe.scss";
+@import "resume.scss";
 
 //General
 * {
@@ -34,6 +35,10 @@ code {
 //Colors
 .bg-blue {
   background-color: $blueColor;
+}
+
+.bg-secondaryBackground {
+  background-color: $secondaryBackgroundColor;
 }
 
 .text-secondColor {

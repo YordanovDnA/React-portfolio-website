@@ -27,7 +27,9 @@ function App() {
 
       <NavBar/>
 
-      <ProfileSection/>
+      <div className="profileSection">
+        <ProfileSection/>
+      </div>
 
       {/* Main section */}
 
