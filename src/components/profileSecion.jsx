@@ -12,7 +12,11 @@ const ProfileSection = () => {
   return (
     <div className="profileSection">
       <div className="profileImgWrapper">
-        <ReactImageAppear className="profileImg" src={IliyanYordnaov} />
+        <ReactImageAppear
+          className="profileImg"
+          src={IliyanYordnaov}
+          animation="fadeInLeft"
+        />
         <span id="profileImgDots" className="dotsEffect"></span>
       </div>
       <h1 className="text-center mt-3">Iliyan Yordanov</h1>
