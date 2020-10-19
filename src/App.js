@@ -12,6 +12,8 @@ import Portfilio from './components/portfolio';
 import Project from './components/project';
 import Blog from './components/blog';
 import Contact from './components/contact';
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -27,7 +29,8 @@ function App() {
   
 
   return (
-    <div className="row">
+    <div style={{height: "100vh"}} className="row">
+      <ToastContainer/>
 
       <NavBar/>
 
@@ -69,6 +72,12 @@ function App() {
         </Switch>
 
       </div>
+      <div style={{height: "3vh"}} className="col-12 text-center bg-dark text-secondColor"
+          
+        >
+          2020 - This website is developed with React.
+          reserved!
+        </div>
     </div>
   );
 }

@@ -84,7 +84,12 @@ const Project = (props) => {
         </div>
         <div className="mt-2">
           <span className="lnr lnr-link text-blue  mr-2 "></span>
-          <a className="text-blue" href={project.info.url} target="_blank">
+          <a
+            className="text-blue"
+            rel="noopener noreferrer"
+            href={project.info.url}
+            target="_blank"
+          >
             Visit
           </a>{" "}
         </div>
