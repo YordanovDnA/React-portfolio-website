@@ -61,12 +61,13 @@ const ProfileSection = () => {
         <span className="badge badge-warning ml-2">NodeJS</span>
         <span className="badge badge-warning ml-2">Express</span>
 
-        <button
+        <a
+          href="https://drive.google.com/u/1/uc?id=1XvieqfFfkRqZIIqcwPDzLK9iyc3GsS_i&export=download"
           className="btn btn-outline-light mt-4 mx-auto d-block w-100"
           type="button"
         >
           Download CV
-        </button>
+        </a>
       </div>
     </React.Fragment>
   );

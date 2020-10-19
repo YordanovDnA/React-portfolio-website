@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProfileSection from "./profileSecion";
+import { portfolio } from "./../data/portfolio";
 
 const Resume = () => {
   return (
@@ -113,34 +114,34 @@ const Resume = () => {
         </div>
       </div>
       <div className="col-lg-4">
-        <div className="card w-100 mt-4 mb-4" style={{ width: "18rem" }}>
-          <img className="card-img-top" src="https://" alt="profile" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text</p>
-          </div>
-        </div>
-        <div className="card w-100 mt-4 mb-4" style={{ width: "18rem" }}>
-          <img className="card-img-top" src="https://" alt="profile" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text</p>
-          </div>
-        </div>
-        <div className="card w-100 mt-4 mb-4" style={{ width: "18rem" }}>
-          <img className="card-img-top" src="https://" alt="profile" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text</p>
-          </div>
-        </div>
-        <div className="card w-100 mt-4 mb-4" style={{ width: "18rem" }}>
-          <img className="card-img-top" src="https://" alt="profile" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text</p>
-          </div>
-        </div>
+        <h5 className="text-center">Some projects</h5>
+        {portfolio.map((project) => {
+          return (
+            <div
+              className="card w-100 mt-4 mb-4 bg-dark"
+              style={{ width: "18rem" }}
+            >
+              <Link to={`/project/${project.id}`}>
+                <img
+                  className="card-img-top"
+                  src={project.photos.thumbnail}
+                  alt="profile"
+                />
+              </Link>
+              <div className="card-body">
+                <h5 className="card-title">{project.info.name}</h5>
+                <p className="card-text">
+                  {project.info.shortDescription}
+                  <span>
+                    <Link className="text-blue" to={`/project/${project.id}`}>
+                      see more
+                    </Link>
+                  </span>
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -8,6 +8,10 @@ import Page404 from './components/404page';
 import HomePage from './components/homePage';
 import AboutMe from './components/aboutMe';
 import Resume from './components/resume';
+import Portfilio from './components/portfolio';
+import Project from './components/project';
+import Blog from './components/blog';
+import Contact from './components/contact';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -54,6 +58,10 @@ function App() {
         </div>
         
         <Switch>
+          <Route path="/project/:id" component={Project} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/portfolio" component={Portfilio} />
           <Route path="/resume" component={Resume} />
           <Route path="/aboutMe" component={AboutMe} />
           <Route path="/" exact component={HomePage}/>
