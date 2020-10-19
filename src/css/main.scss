@@ -76,3 +76,8 @@ code {
 ::-webkit-scrollbar-thumb:window-inactive {
   background: $blueColor;
 }
+
+//This is fixing the white background to the ReactImageAppearPlaceholder
+.ReactImageAppearPlaceholder {
+  background-color: transparent !important;
+}

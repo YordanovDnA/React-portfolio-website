@@ -69,7 +69,7 @@ const Contact = (props) => {
   return (
     <React.Fragment>
       <h1>Contact form</h1>
-      <form className="form-group col-12 col-lg-6 col-md-8 mx-auto text-left">
+      <form className="form-group col-12 col-lg-6 col-md-8 mx-auto text-left mt-4">
         <input
           className="form-control"
           onChange={onChangeUserName}

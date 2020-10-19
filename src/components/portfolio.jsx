@@ -13,12 +13,16 @@ const Portfilio = (props) => {
               onClick={() => props.history.push(`/project/${project.id}`)}
               className="portfolioThumbnails rounded bordered w-100"
               src={project.photos.thumbnail}
-              placeholderClass="rounded"
+              placeholderClass="rounded ReactImageAppearPlaceholder"
             />
             <h4 className="mt-4">{project.info.name}</h4>
           </div>
         );
       })}
+      <div className="col-12 alert alert-info" role="alert">
+        <strong>Note:</strong> These are not my only projects. More will be
+        added soon!
+      </div>
     </div>
   );
 };
