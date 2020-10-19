@@ -72,7 +72,7 @@ function App() {
         </Switch>
 
       </div>
-      <div style={{height: "3vh"}} className="col-12 text-center bg-dark text-secondColor"
+      <div style={{height: "3vh"}} className="footer col-12 text-center bg-dark text-secondColor"
           
         >
           2020 - This website is developed with React.

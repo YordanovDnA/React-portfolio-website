@@ -1,11 +1,29 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Joi from "joi-browser";
 
-const Contact = () => {
+const Contact = (props) => {
   const [userName, setUserName] = useState();
   const [userEmail, setUserEmail] = useState();
   const [userMessage, setUserMessage] = useState();
+  const [errors, setErrors] = useState();
+
+  const schema = {
+    userName: Joi.string().min(3).required().label("Name"),
+    userEmail: Joi.string().email().required().label("Email"),
+    userMessage: Joi.string().min(20).max(100).required().label("Message"),
+  };
+
+  const validate = () => {
+    const result = Joi.validate({ userName, userEmail, userMessage }, schema, {
+      abortEarly: false,
+    });
+    if (!result.error) return null;
+    const errors = {};
+    for (let item of result.error.details) errors[item.path[0]] = item.message;
+    return errors;
+  };
 
   const template_params = {
     userName,
@@ -26,21 +44,25 @@ const Contact = () => {
   };
 
   const onSubmit = () => {
-    console.log("Sending...");
-    try {
-      axios.post("https://api.emailjs.com/api/v1.0/email/send", {
-        service_id: "service_39b823o",
-        template_id: "contact_form",
-        user_id: "user_KqKAmEXOSiTYiE7xO1sea",
-        template_params,
-      });
-      toast.success(
-        `Your email was send successfuly! I will be in touch with you shortly`
-      );
-    } catch (error) {
-      toast.error(
-        "Oups, unexpected error occured. Why don't you try to reach me via LinkedIn or Email."
-      );
+    const err = validate();
+    setErrors(err);
+    if (!err) {
+      try {
+        axios.post("https://api.emailjs.com/api/v1.0/email/send", {
+          service_id: "service_39b823o",
+          template_id: "contact_form",
+          user_id: "user_KqKAmEXOSiTYiE7xO1sea",
+          template_params,
+        });
+        props.history.push("/");
+        toast.success(
+          `Your email was send successfuly! I will be in touch with you shortly`
+        );
+      } catch (error) {
+        toast.error(
+          "Oups, unexpected error occured. Why don't you try to reach me via LinkedIn or Email."
+        );
+      }
     }
   };
 
@@ -56,7 +78,11 @@ const Contact = () => {
           placeholder="Name"
           name="userName"
         />{" "}
-        <br />
+        {errors && errors.userName ? (
+          <div className="text-danger m-1">{errors.userName}</div>
+        ) : (
+          <br />
+        )}
         <input
           className="form-control"
           onChange={onChangeUserEmail}
@@ -65,7 +91,11 @@ const Contact = () => {
           placeholder="Email"
           name="userEmail"
         />{" "}
-        <br />
+        {errors && errors.userEmail ? (
+          <div className="text-danger m-1">{errors.userEmail}</div>
+        ) : (
+          <br />
+        )}
         <textarea
           className="form-control"
           onChange={onChangeMessage}
@@ -76,7 +106,11 @@ const Contact = () => {
           cols="30"
           rows="10"
         ></textarea>
-        <br />
+        {errors && errors.userMessage ? (
+          <div className="text-danger m-1">{errors.userMessage}</div>
+        ) : (
+          <br />
+        )}
         <button
           onClick={() => onSubmit()}
           className="btn btn-dark text-blue"

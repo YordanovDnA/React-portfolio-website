@@ -28,6 +28,14 @@
   .hamburgerMenuIcon {
     display: block;
   }
+
+  .main {
+    height: 100vh;
+  }
+
+  .footer {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
