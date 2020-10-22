@@ -9,13 +9,13 @@ const Portfilio = (props) => {
       {portfolio.map((project) => {
         return (
           <div key={project.id} className="col-xl-6 col-12 text-left mt-4">
+            <h4 className="mt-4">{project.info.name}</h4>
             <ReactImageAppear
               onClick={() => props.history.push(`/project/${project.id}`)}
               className="portfolioThumbnails rounded bordered w-100"
               src={project.photos.thumbnail}
               placeholderClass="rounded ReactImageAppearPlaceholder"
             />
-            <h4 className="mt-4">{project.info.name}</h4>
           </div>
         );
       })}

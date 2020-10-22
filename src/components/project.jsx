@@ -1,5 +1,7 @@
 import React from "react";
 import { portfolio } from "./../data/portfolio";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Project = (props) => {
   const id = parseInt(props.match.params.id);
@@ -93,6 +95,19 @@ const Project = (props) => {
             Visit
           </a>{" "}
         </div>
+        {project.info.repository && (
+          <div className="mt-2">
+            <FontAwesomeIcon className="text-blue mr-2" icon={faGithub} />
+            <a
+              className="text-blue"
+              rel="noopener noreferrer"
+              href={project.info.repository}
+              target="_blank"
+            >
+              Repository
+            </a>{" "}
+          </div>
+        )}
         <div className="mt-2">
           <span class="lnr lnr-calendar-full text-blue mr-2"></span>
           {project.info.dateCompleted}

@@ -76,7 +76,6 @@ function App() {
           
         >
           2020 - This website is developed with React.
-          reserved!
         </div>
     </div>
   );

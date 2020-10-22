@@ -113,35 +113,45 @@ const Resume = () => {
           <p>Oct, 2016</p>
         </div>
       </div>
-      <div className="col-lg-4">
+      <div className="some-projects col-lg-4">
         <h5 className="text-center">Some projects</h5>
         {portfolio.map((project) => {
-          return (
-            <div
-              className="card w-100 mt-4 mb-4 bg-dark"
-              style={{ width: "18rem" }}
-            >
-              <Link to={`/project/${project.id}`}>
-                <img
-                  className="card-img-top"
-                  src={project.photos.thumbnail}
-                  alt="profile"
-                />
-              </Link>
-              <div className="card-body">
-                <h5 className="card-title">{project.info.name}</h5>
-                <p className="card-text">
-                  {project.info.shortDescription}
-                  <span>
-                    <Link className="text-blue" to={`/project/${project.id}`}>
-                      see more
-                    </Link>
-                  </span>
-                </p>
+          if (portfolio.indexOf(project) < 3) {
+            return (
+              <div
+                key={project.id}
+                className="card w-100 mt-4 mb-4 bg-dark"
+                style={{ width: "18rem" }}
+              >
+                <Link to={`/project/${project.id}`}>
+                  <img
+                    className="card-img-top"
+                    src={project.photos.thumbnail}
+                    alt="profile"
+                  />
+                </Link>
+                <div className="card-body">
+                  <h5 className="card-title">{project.info.name}</h5>
+                  <p className="card-text">
+                    {project.info.shortDescription}
+                    <span>
+                      <Link className="text-blue" to={`/project/${project.id}`}>
+                        see more
+                      </Link>
+                    </span>
+                  </p>
+                </div>
               </div>
-            </div>
-          );
+            );
+          } else return null;
         })}
+        <Link
+          to="/portfolio"
+          className="btn btn-outline-info d-block mx-auto mt-2 mb-4"
+          type="button"
+        >
+          Full portfolio
+        </Link>
       </div>
     </div>
   );
