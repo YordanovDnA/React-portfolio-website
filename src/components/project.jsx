@@ -109,7 +109,7 @@ const Project = (props) => {
           </div>
         )}
         <div className="mt-2">
-          <span class="lnr lnr-calendar-full text-blue mr-2"></span>
+          <span className="lnr lnr-calendar-full text-blue mr-2"></span>
           {project.info.dateCompleted}
         </div>
         <p className="mt-2 mb-4">{project.info.description}</p>
