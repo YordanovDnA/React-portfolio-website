@@ -10,6 +10,9 @@ import MealMenuCreationList from "../imgs/portfolio/MealMenuCreation-list.jpg";
 import SofiMartenFood from "../imgs/portfolio/SofiMartenFood.jpg"
 import SofiMartenFoodMealMenu from "../imgs/portfolio/SofiMartenFood-meal-menu.jpg";
 import SofiMartenFoodContact from "../imgs/portfolio/SofiMartenFood-contact.jpg";
+import JSCalculator from "../imgs/portfolio/JS-Calculator.jpg";
+import JSImgSlider from "../imgs/portfolio/JS-Img-Slider.jpg";
+import JSHumanGenerator from "../imgs/portfolio/JS-Human-Genarator.jpg";
 
 export const portfolio = [
     {
@@ -84,6 +87,24 @@ export const portfolio = [
     photos: {
         thumbnail: SofiMartenFood,
         list: [SofiMartenFood,SofiMartenFoodMealMenu, SofiMartenFoodContact]
+    }
+    
+},
+{
+    id: 5,
+    info: {
+        name: "JavaScript practice",
+        client: "Personal project",
+        version: "1.0",
+        dateCompleted: "July, 2020",
+        description: "This is a collection of all my practice projects on JavaScript. I have calculator, human generator, img slider and many more. Follow the link and explore all of them. If you like any hit the like button. I will appreciate it. ",
+        shortDescription: "This is a collection of all my practice projects on JavaScript. I have calculator, human generator...",
+        technology: ["HTML", "CSS", "JavaScript"],
+        url: "https://codepen.io/collection/DVVzvo",
+    },
+    photos: {
+        thumbnail: JSCalculator,
+        list: [JSCalculator,JSHumanGenerator, JSImgSlider]
     }
     
 },
