@@ -5,6 +5,7 @@ import {
   faFacebook,
   faLinkedin,
   faGithub,
+  faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -42,6 +43,13 @@ const ProfileSection = () => {
           target="_blank"
         >
           <FontAwesomeIcon className="socialMediaIcons" icon={faGithub} />
+        </a>
+        <a
+          rel="noopener noreferrer"
+          href="https://codepen.io/iliyan-yordanov"
+          target="_blank"
+        >
+          <FontAwesomeIcon className="socialMediaIcons" icon={faCodepen} />
         </a>
       </div>
       <div className="container mt-4">
