@@ -11,6 +11,12 @@ const Resume = () => {
       {/* Meta description */}
 
       <Helmet>
+        <title>Iliyan Yordanov - Resume</title>
+        <meta
+          name="description"
+          content="My resume. Iliyan Yordanov, front-end engeneer from Bristol, UK. "
+        />
+        <meta property="image" content={IliyanYordanov} />
         <meta property="og:title" content="Iliyan Yordanov - Resume" />
         <meta
           property="og:description"

@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
 import "popper.js/dist/popper";
 import { BrowserRouter } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 
 
 render(

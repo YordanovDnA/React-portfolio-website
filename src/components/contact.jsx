@@ -73,6 +73,12 @@ const Contact = (props) => {
       {/* Meta description */}
 
       <Helmet>
+        <title>Iliyan Yordanov - Contact</title>
+        <meta
+          name="description"
+          content="Contact form on the portfolio website of Iliyan Yordanov, front-end engeneer from Bristol, UK."
+        />
+        <meta property="image" content={IliyanYordanov} />
         <meta property="og:title" content="Iliyan Yordanov - Contact form" />
         <meta
           property="og:description"

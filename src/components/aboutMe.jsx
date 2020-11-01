@@ -15,6 +15,13 @@ const AboutMe = () => {
       {/* Meta description */}
 
       <Helmet>
+        <title>Iliyan Yordanov - About me</title>
+        <meta
+          name="description"
+          content="Front-end engeneer from Bristol, UK. My passion is to programing things. Doesn't matter, is it a website
+            or electronic, I love to code and solve problems..."
+        />
+        <meta property="image" content={IliyanYordanov} />
         <meta property="og:title" content="Iliyan Yordanov - About me" />
         <meta
           property="og:description"

@@ -10,6 +10,9 @@ const Project = (props) => {
   return (
     <React.Fragment>
       <Helmet>
+        <title>{`Iliyan Yordanov - Project - ${project.info.name}`}</title>
+        <meta name="description" content={project.info.shortDescription} />
+        <meta property="image" content={project.photos.thumbnail} />
         <meta
           property="og:title"
           content={`Iliyan Yordanov - Project - ${project.info.name}`}

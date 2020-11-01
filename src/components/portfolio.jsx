@@ -9,10 +9,16 @@ const Portfilio = (props) => {
     <React.Fragment>
       {/* Meta description */}
       <Helmet>
+        <title>Iliyan Yordanov - Portfolio</title>
+        <meta
+          name="description"
+          content="The portfolio of Iliyan Yordanov, front-end engeneer from Bristol, UK. On this page you can find all my projects I have ever built.  "
+        />
+        <meta property="image" content={IliyanYordanov} />
         <meta property="og:title" content="Iliyan Yordanov - Portfolio" />
         <meta
           property="og:description"
-          content="The portfolio of Iliyan Yordanov, front-end engeneer from Bristol, UK. On this page you can find all my projects I ever build. "
+          content="The portfolio of Iliyan Yordanov, front-end engeneer from Bristol, UK. On this page you can find all my projects I have ever built. "
         />
         <meta property="og:image" content={IliyanYordanov} />
         <meta property="og:url" content={window.location.href} />

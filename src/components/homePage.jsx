@@ -10,7 +10,13 @@ class HomePage extends Component {
         {/* Meta Description */}
 
         <Helmet>
-          <meta property="og:title" content="Iliyan Yordanov - Home" />
+          <title>Iliyan Yordanov - Home page</title>
+          <meta
+            name="description"
+            content="Home page of the Iliyan Yordanov's portfolio website, a front-end engeneer from Bristol, UK."
+          />
+          <meta property="image" content={IliyanYordanov}/>
+          <meta property="og:title" content="Iliyan Yordanov - Home page" />
           <meta
             property="og:description"
             content="Home page of the Iliyan Yordanov's portfolio website, a front-end engeneer from Bristol, UK."

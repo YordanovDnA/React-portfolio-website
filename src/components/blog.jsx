@@ -7,6 +7,12 @@ const Blog = () => {
     <React.Fragment>
       {/* Meta description */}
       <Helmet>
+        <title>Iliyan Yordanov - Blog</title>
+        <meta
+          name="description"
+          content="Blog posts from Iliyan Yordanov, front-end engeneer from Bristol, UK."
+        />
+        <meta property="image" content={IliyanYordanov} />
         <meta property="og:title" content="Iliyan Yordanov - Blog" />
         <meta
           property="og:description"
