@@ -14,8 +14,7 @@ import Blog from './components/blog';
 import Contact from './components/contact';
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { Helmet } from 'react-helmet';
-import IliyanYordanov from "./imgs/profile/IliyanYordanov.jpg";
+
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -31,17 +30,8 @@ function App() {
   
 
   return (
-    // Meta description
     <React.Fragment>
-      <Helmet>
-      <meta property="og:title" content="Iliyan Yordanov - Home" />
-        <meta
-          property="og:description"
-          content="Home page of the Iliyan Yordanov's portfolio website, a front-end engeneer from Bristol, UK."
-        />
-        <meta property="og:image" content={IliyanYordanov} />
-        <meta property="og:url" content={window.location.href} />
-      </Helmet>
+      
   
       <div style={{height: "100vh"}} className="row">
         <ToastContainer/>
