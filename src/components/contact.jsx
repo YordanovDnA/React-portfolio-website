@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Joi from "joi-browser";
+import { Helmet } from "react-helmet";
+import IliyanYordanov from "../imgs/profile/IliyanYordanov.jpg";
 
 const Contact = (props) => {
   const [userName, setUserName] = useState();
@@ -68,6 +70,18 @@ const Contact = (props) => {
 
   return (
     <React.Fragment>
+      {/* Meta description */}
+
+      <Helmet>
+        <meta property="og:title" content="Iliyan Yordanov - Contact form" />
+        <meta
+          property="og:description"
+          content="Contact form on the portfolio website of Iliyan Yordanov, front-end engeneer from Bristol, UK. "
+        />
+        <meta property="og:image" content={IliyanYordanov} />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
+
       <h1>Contact form</h1>
       <form className="form-group col-12 col-lg-6 col-md-8 mx-auto text-left mt-4">
         <input

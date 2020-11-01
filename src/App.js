@@ -14,6 +14,8 @@ import Blog from './components/blog';
 import Contact from './components/contact';
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
+import IliyanYordanov from "./imgs/profile/IliyanYordanov.jpg";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -29,55 +31,68 @@ function App() {
   
 
   return (
-    <div style={{height: "100vh"}} className="row">
-      <ToastContainer/>
-
-      <NavBar/>
-
-      <div className="profileSection">
-        <ProfileSection/>
-      </div>
-
-      {/* Main section */}
-
-      <div className="main col">
-
-        <div style={style} className="hamburgerMenuWrapper">
-          <HamburgerMenu setOpen={setOpen} />
+    // Meta description
+    <React.Fragment>
+      <Helmet>
+      <meta property="og:title" content="Iliyan Yordanov - Home" />
+        <meta
+          property="og:description"
+          content="Home page of the Iliyan Yordanov's portfolio website, a front-end engeneer from Bristol, UK."
+        />
+        <meta property="og:image" content={IliyanYordanov} />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
+  
+      <div style={{height: "100vh"}} className="row">
+        <ToastContainer/>
+  
+        <NavBar/>
+  
+        <div className="profileSection">
+          <ProfileSection/>
         </div>
-
-        <div className="hamburgerMenuIcon">
-          <HamburgerMenuIcon
-              isOpen={open}
-              menuClicked={()=>setOpen(!open)}
-              width={30}
-              height={20}
-              strokeWidth={1}
-              rotate={0}
-              color='white'
-              borderRadius={0}
-              animationDuration={0.5}
-            />
-        </div>
-        
-        <Switch>
-          <Route path="/project/:id" component={Project} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/portfolio" component={Portfilio} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/aboutMe" component={AboutMe} />
-          <Route path="/" exact component={HomePage}/>
-          <Route path="*" component={Page404} />
-        </Switch>
-
-      </div>
-      <div style={{height: "3vh"}} className="footer col-12 text-center bg-dark text-secondColor"
+  
+        {/* Main section */}
+  
+        <div className="main col">
+  
+          <div style={style} className="hamburgerMenuWrapper">
+            <HamburgerMenu setOpen={setOpen} />
+          </div>
+  
+          <div className="hamburgerMenuIcon">
+            <HamburgerMenuIcon
+                isOpen={open}
+                menuClicked={()=>setOpen(!open)}
+                width={30}
+                height={20}
+                strokeWidth={1}
+                rotate={0}
+                color='white'
+                borderRadius={0}
+                animationDuration={0.5}
+              />
+          </div>
           
-        >
-          2020 - This website is developed with React.
+          <Switch>
+            <Route path="/project/:id" component={Project} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/portfolio" component={Portfilio} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/aboutMe" component={AboutMe} />
+            <Route path="/" exact component={HomePage}/>
+            <Route path="*" component={Page404} />
+          </Switch>
+  
         </div>
-    </div>
+        <div style={{height: "3vh"}} className="footer col-12 text-center bg-dark text-secondColor"
+            
+          >
+            2020 - This website is developed with React.
+          </div>
+      </div>
+    </React.Fragment>
   );
 }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import ImageAppear from "react-image-appear";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import IliyanYordanov from "../imgs/profile/IliyanYordanov.jpg";
 import MikaelaDimova from "../imgs/testimonials/MikaelaDimova.jpg";
 import MartinPenchev from "../imgs/testimonials/MartinPenchev.jpg";
 
@@ -10,6 +12,19 @@ const AboutMe = () => {
 
   return (
     <React.Fragment>
+      {/* Meta description */}
+
+      <Helmet>
+        <meta property="og:title" content="Iliyan Yordanov - About me" />
+        <meta
+          property="og:description"
+          content="Front-end engeneer from Bristol, UK. My passion is to programing things. Doesn't matter, is it a website
+            or electronic, I love to code and solve problems..."
+        />
+        <meta property="og:image" content={IliyanYordanov} />
+        <meta property="og:url" content={window.location.href} />
+      </Helmet>
+
       {/* Description */}
 
       <div className="aboutMeDescription col-12 row text-left">
