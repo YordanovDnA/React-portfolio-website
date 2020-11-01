@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot'
 import App from './App';
 import "./css/main.scss"
 import * as serviceWorker from './serviceWorker';
@@ -9,7 +9,7 @@ import "popper.js/dist/popper";
 import { BrowserRouter } from 'react-router-dom';
 
 
-ReactDOM.render(
+render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
