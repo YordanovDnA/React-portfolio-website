@@ -15,6 +15,7 @@ import JSImgSlider from "../imgs/portfolio/JS-Img-Slider.jpg";
 import JSHumanGenerator from "../imgs/portfolio/JS-Human-Genarator.jpg";
 import QChartDefault from "../imgs/portfolio/q-chart-default.jpg"
 import QChartWithProps from "../imgs/portfolio/q-chart-with-props.jpg"
+import CloudlineSlotMachine from "../imgs/portfolio/cloudline-slot-machine.jpg"
 
 export const portfolio = [
     {
@@ -126,6 +127,25 @@ export const portfolio = [
     photos: {
         thumbnail: QChartDefault,
         list: [QChartDefault,QChartWithProps]
+    }
+    
+},
+{
+    id: 7,
+    info: {
+        name: "Cloudline - slot machine",
+        client: "Interview test",
+        version: "1.0",
+        dateCompleted: "November, 2020",
+        description: "This project is part of my job application project for Junior React Developer in Cloudline. It's simple test combining React and Redux to show the level of the developer.",
+        shortDescription: "This project is part of my job application project for Junior React Developer in Cloudline....",
+        technology: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+        url: "https://master.d2whutzgjrer86.amplifyapp.com",
+        repository: "https://github.com/YordanovDnA/cloudline-slot-machine/tree/master"
+    },
+    photos: {
+        thumbnail: CloudlineSlotMachine,
+        list: [CloudlineSlotMachine]
     }
     
 },
