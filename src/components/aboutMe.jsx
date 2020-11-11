@@ -47,11 +47,11 @@ const AboutMe = () => {
             or electronic, I love to code and solve problems.
             <br />
             <br />
-            Some of my favorite tools are React, Redux, and I'm very attracted
+            Some of my favourite tools are React, Redux, and I'm very attracted
             to Node.js and Express. Although I'm not exactly a full-stack
             software engineer at the moment, I work very hard to become one. One
             day I would like to work in a big team with lots of professionals,
-            developing the feature.
+            developing the future.
             <br />
             <br />
             I'm a dreamer, and I truly believe that technologies are helpful for
@@ -144,7 +144,7 @@ const AboutMe = () => {
             website within a day or two, and everything is so easy. Furthermore,
             you can easily add plugins and extend your website to whatever you
             want, or it could be your eCommerce solution. You probably know that
-            a significant part of the websites online are built on WordPress.
+            a significant part of the websites online is built on WordPress.
             <br />
             <br />
             However, WordPress has it's pros and cons. If you'd like to know

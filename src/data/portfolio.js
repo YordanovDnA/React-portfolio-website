@@ -13,6 +13,8 @@ import SofiMartenFoodContact from "../imgs/portfolio/SofiMartenFood-contact.jpg"
 import JSCalculator from "../imgs/portfolio/JS-Calculator.jpg";
 import JSImgSlider from "../imgs/portfolio/JS-Img-Slider.jpg";
 import JSHumanGenerator from "../imgs/portfolio/JS-Human-Genarator.jpg";
+import QChartDefault from "../imgs/portfolio/q-chart-default.jpg"
+import QChartWithProps from "../imgs/portfolio/q-chart-with-props.jpg"
 
 export const portfolio = [
     {
@@ -105,6 +107,25 @@ export const portfolio = [
     photos: {
         thumbnail: JSCalculator,
         list: [JSCalculator,JSHumanGenerator, JSImgSlider]
+    }
+    
+},
+{
+    id: 6,
+    info: {
+        name: "Qchart",
+        client: "Personal project",
+        version: "1.0",
+        dateCompleted: "November, 2020",
+        description: "This is a reusable quick chart component, which is well documented, and it's in help for me and any other developers, who want quick chart solution. The chart information can be change via props",
+        shortDescription: "This is a reusable quick chart component which is well documented, and it's in help...",
+        technology: ["HTML", "CSS", "JavaScript", "React"],
+        url: "https://main.d4y95vsyqgs94.amplifyapp.com",
+        repository: "https://github.com/YordanovDnA/qchart"
+    },
+    photos: {
+        thumbnail: QChartDefault,
+        list: [QChartDefault,QChartWithProps]
     }
     
 },
