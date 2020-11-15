@@ -16,6 +16,7 @@ import JSHumanGenerator from "../imgs/portfolio/JS-Human-Genarator.jpg";
 import QChartDefault from "../imgs/portfolio/q-chart-default.jpg"
 import QChartWithProps from "../imgs/portfolio/q-chart-with-props.jpg"
 import CloudlineSlotMachine from "../imgs/portfolio/cloudline-slot-machine.jpg"
+import ReactDashTemplate from "../imgs/portfolio/react-dash-template.jpg"
 
 export const portfolio = [
     {
@@ -146,6 +147,25 @@ export const portfolio = [
     photos: {
         thumbnail: CloudlineSlotMachine,
         list: [CloudlineSlotMachine]
+    }
+    
+},
+{
+    id: 8,
+    info: {
+        name: "React dashboard template",
+        client: "Template",
+        version: "1.0",
+        dateCompleted: "In process",
+        description: "This is a dashboard template same as the one build by startbootsrap.com, but on React. You can see the original one at https://startbootstrap.com/template/sb-admin. I built this template in help of me and other developers. ",
+        shortDescription: "This is a dashboard template same as the one build by startbootsrap.com, but on React. You can see...",
+        technology: ["HTML", "CSS", "JavaScript", "React"],
+        url: "https://main.d18q5kd7d8wmci.amplifyapp.com",
+        repository: "https://github.com/YordanovDnA/react-dash-template"
+    },
+    photos: {
+        thumbnail: ReactDashTemplate,
+        list: [ReactDashTemplate]
     }
     
 },
