@@ -29,8 +29,6 @@
     "react-mail-form": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-snap": "^1.23.0",
-    "react-snapshot": "^1.3.0",
     "react-toastify": "^6.0.9"
   },
   "scripts": {
