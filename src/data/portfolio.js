@@ -17,8 +17,28 @@ import QChartDefault from "../imgs/portfolio/q-chart-default.jpg"
 import QChartWithProps from "../imgs/portfolio/q-chart-with-props.jpg"
 import CloudlineSlotMachine from "../imgs/portfolio/cloudline-slot-machine.jpg"
 import ReactDashTemplate from "../imgs/portfolio/react-dash-template.jpg"
+import EasternBeauty from "../imgs/portfolio/EasternBeauty.jpg"
+import EasternBeautyDashboard from "../imgs/portfolio/EasternBeauty-dashboard.jpg"
+import EasternBeautyCategories from "../imgs/portfolio/EasternBeautyCategories.jpg"
 
 export const portfolio = [
+    {
+        id: 0,
+        info: {
+            name: "EasternBeauty website, app and dashboard",
+            client: "EasterBeauty",
+            version: "1.0",
+            dateCompleted: "In process",
+            description: "At this project I combined all of my skills together to develop website, mobile app and a dashbord. Managing a team of 5, creating the UI/UX design using Marvel App, helping with the development of the marketing strategy, and more. We're developing platform where users can find information about essential oils, and how to use them in different helth conditions. The platform have normal and premium users, plus paid courses for better undertanding how to mix oils or herbs, and use them to prevent bad health conditions.",
+            shortDescription : "EasternBeauty is a platform where users can find information about essential oils, and how to use them in different helth conditions.",
+            technology: ["HTML", "SASS", "Bootstrap 4", "JavaScript", "React", "Next.js", "NodeJS", "Express", "MarvelApp", "Freedcamp"],
+        },
+        photos: {
+            thumbnail: EasternBeauty,
+            list: [EasternBeauty, EasternBeautyDashboard, EasternBeautyCategories]
+        }
+        
+    },
     {
         id: 1,
         info: {
