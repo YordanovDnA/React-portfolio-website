@@ -72,7 +72,7 @@ export const portfolio = [
             description: "Docs is a hospital document system. It allows the nurses to create discharging letters for patients, and after the head nurse and surgeon approved the document to be download, and the patient can be discharged.",
             shortDescription: "Docs is a hospital document system. It allows the nurses to create discharging letters for patients...",
             technology: ["HTML", "SASS", "Bootstrap 4", "JavaScript", "React", "Redux", "jQuery", "NodeJS", "Express"],
-            url: "https://master.d52g4t92p4xkb.amplifyapp.com/",
+            url: "https://hospital-docs-front-end.herokuapp.com",
             repository: "https://github.com/YordanovDnA/Docs-system",
         },
         photos: {
@@ -110,7 +110,6 @@ export const portfolio = [
             description: "This project I created for a company in Sofia, Bulgaria. This company has takeaway food restourant with different meal menu every day. I designedd their website and made this web application so they can create the daily meal menu and upload it to their website. Although I'm doing more front-end developing I did this project all on my own with PHP and MySQL for the back-end.",
             shortDescription: "This project I created for a company in Sofia, Bulgaria. This company has takeaway food restourant...",
             technology: ["HTML", "CSS", "PHP", "MySQL"],
-            url: "http://menu.sofimarten.com/",
             repository: "https://github.com/YordanovDnA/Food-menu-creating",
         },
         photos: {
@@ -165,7 +164,7 @@ export const portfolio = [
             description: "This is a reusable quick chart component, which is well documented, and it's in help for me and any other developers, who want quick chart solution. The chart information can be change via props",
             shortDescription: "This is a reusable quick chart component which is well documented, and it's in help...",
             technology: ["HTML", "CSS", "JavaScript", "React"],
-            url: "https://main.d4y95vsyqgs94.amplifyapp.com",
+            url: "https://qchart.herokuapp.com",
             repository: "https://github.com/YordanovDnA/qchart"
         },
         photos: {
@@ -184,7 +183,7 @@ export const portfolio = [
             description: "This project is part of my job application project for Junior React Developer in Cloudline. It's simple test combining React and Redux to show the level of the developer.",
             shortDescription: "This project is part of my job application project for Junior React Developer in Cloudline....",
             technology: ["HTML", "CSS", "JavaScript", "React", "Redux"],
-            url: "https://master.d2whutzgjrer86.amplifyapp.com",
+            url: "https://slot-machines-technical-test.herokuapp.com",
             repository: "https://github.com/YordanovDnA/cloudline-slot-machine/tree/master"
         },
         photos: {
@@ -203,7 +202,7 @@ export const portfolio = [
             description: "This is a dashboard template same as the one build by startbootsrap.com, but on React. You can see the original one at https://startbootstrap.com/template/sb-admin. I built this template in help of me and other developers. ",
             shortDescription: "This is a dashboard template same as the one build by startbootsrap.com, but on React. You can see...",
             technology: ["HTML", "CSS", "JavaScript", "React"],
-            url: "https://main.d18q5kd7d8wmci.amplifyapp.com",
+            url: "https://react-dashboard-template.herokuapp.com",
             repository: "https://github.com/YordanovDnA/react-dash-template"
         },
         photos: {
