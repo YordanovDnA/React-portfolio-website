@@ -2,6 +2,9 @@
   "name": "my-portfolio-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "v12.18.3"
+  },
   "description": "Iliyan Yordanov portfolio website.",
   "author": {
     "name": "Iliyan Yordanov",
